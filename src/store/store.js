@@ -5,25 +5,16 @@ vue.use(vuex);
 
 var store = new vuex.Store({
 	state : {
-		password : '1254'
+		password : ''
 	},
 	actions : {
 		action_pw(context,payload){
 			var pw = ''
-			axios.get('/x/web-interface/ranking/region?rid=1&day=7&jsonp=jsonp').then((res)=>{
-
-			  console.log(res)
-			},(err)=>{});
-			axios.get('http://45.32.51.110:1234/set_a_mima').then((res)=>{
-			    console.log(res)
-			    pw = res.mima
-			},(err)=>{});		
-			console.log(1)	
 			axios.get('/set_a_mima').then((res)=>{
-			    console.log(res)
-			    pw = res.mima
+			    console.log(res.data.mima)
+			    pw = res.data.mima
+			    context.commit('CHANGE_PASSWORD',pw);
 			},(err)=>{});
-			context.commit('CHANGE_PASSWORD',pw);
 		}
 	},
 	mutations : {

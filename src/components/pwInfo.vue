@@ -25,7 +25,6 @@ export default {
   },
   computed : {
     ...mapState(['password'])
-
   }
 }
 </script>
@@ -37,6 +36,7 @@ export default {
 #PwInfo div:nth-child(1) p:nth-child(1){ color: #ce2f1c ;font-size: 34px;font-weight: bold}
 #PwInfo div:nth-child(1) p:nth-child(2){ color: #ce2f1c ;font-size: 20px;}
 #PwInfo div:nth-child(2){ position: absolute;left: 0;right: 0;top: 65%;margin: auto ;width: 50%;text-align: center;}
+#PwInfo div:nth-child(2) p{ color: white}
 
 body{background-image: url(../assets/imgs/2.png); background-size: 100% 100%; position: relative;}
 

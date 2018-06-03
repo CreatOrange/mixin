@@ -11,7 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/set_a_mima' : {   
+        '/set_a_mima/*' : {   
             target: 'http://45.32.51.110:1234/',
             host : '45.32.51.110',
             changeOrigin : true

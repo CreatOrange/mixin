@@ -27,7 +27,7 @@ export default {
   },
   methods : {
     handelGetPw(){
-      alert(1)    
+      console.log(2)    
       this.$store.dispatch('action_pw',1);
       
       this.$router.push('/info');
