@@ -5,7 +5,7 @@
       
       
     </div>
-    <div class="btn" @click='handelGetPw()'></div>
+    <div class="btn" @tap='handelGetPw'></div>
     <div id="tutorial">
       <a href="https://www.jianshu.com/p/65b12a44ad53">点击查看mixin下载注册教程</a>
     </div>
